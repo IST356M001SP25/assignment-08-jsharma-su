@@ -23,3 +23,11 @@ Examples:
 **Best Reflection** "I learned when to use while vs for loops. While loops are for sentiel-controlled values (waiting for a condition to occur), vs for loops are for iterating over collections of fixed values."
 
 `--- Reflection Below This Line ---`
+
+This assignment taught me how to design and implement a simple ETL (Extract, Transform, Load) pipeline in Python, using real-world data involving parking violations in Syracuse. The most valuable aspect of this project was learning how to break down a larger analytical goal—identifying high-violation locations—into smaller, testable functions that perform targeted tasks.
+
+The process began with understanding the dataset and the end goals: filtering locations with high total fines, extracting map-ready data, and isolating the tickets associated with these high-violation areas. Implementing top_locations helped me gain experience with group-by operations and threshold filtering using pandas. Extending that with top_locations_mappable showed how important it is to keep key location attributes like latitude and longitude when preparing data for visualization. The final function, tickets_in_top_locations, highlighted the value of modular code and how earlier computations can be reused efficiently.
+
+One challenge I encountered was ensuring that location coordinates matched correctly with the aggregated fine totals, since duplicate entries or missing values could lead to incorrect merges. This emphasized the importance of understanding data granularity and ensuring data consistency.
+
+Overall, I found the assignment engaging and practical. It helped solidify my understanding of data cleaning, transformation, and file output in Python, which are all fundamental skills in data engineering and analytics work.
