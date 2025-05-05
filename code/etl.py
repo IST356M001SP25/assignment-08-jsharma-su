@@ -3,7 +3,8 @@ import streamlit as st
 
 
 def top_locations(violations_df : pd.DataFrame, threshold=1000) -> pd.DataFrame:
-    return pd.DataFrame()  # TODO implement this function
+    location_sums = violations_df.groupby('location')['fine_amount'].sum().reset_index
+    return pd.DataFrame()  
 
 
 def top_locations_mappable(violations_df : pd.DataFrame, threshold=1000) -> pd.DataFrame:
